@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WebRaf</title>
 		<style>
 		    #myVideo {
 			  position: fixed;
@@ -16,7 +16,7 @@
 			.content {
 			  position: fixed;
 			  bottom: 0;
-			  background: rgba(240, 219, 25, 0.43);
+			  background: rgba(6, 18, 20, 0.55);
 			  color: #f1f1f1;
 			  width: 100%;
 			  padding: 20px;
@@ -47,6 +47,24 @@
 			  color: black;
 			}
 
+			.vertical-menu {
+				width: 200px;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				left: 0;
+				bottom: 0;
+				position: fixed;
+				display: block;
+				text-align: center;
+			}
+
+			.vertical-menu a {
+				color: white; /* Black text color */
+				display: block; /* Make the links appear below each other */
+				padding: 12px; /* Add some padding */
+				text-decoration: none; /* Remove underline from links */
+				margin-top: 10px;
+			}
 		</style>
 
 	</head>
@@ -58,10 +76,13 @@
 		</video>
 
 		<div class="content">
-		  <!-- Use a button to pause/play the video with JavaScript -->
-		  <button class="myBtn">Inicio</button>
-		  <button class="myBtn">Sobre</button>
-		  <button class="myBtn">Contato</button>
+		  <div class="vertical-menu">
+				<a href="#">Blog</a>
+				<a href="#">Sobre</a>
+				<a href="#">Newlester</a>
+				<a href="#">Contato</a>
+				<a href="#">Apoie</a>
+			</div>
 		</div>
 		<!--
 		<script>
